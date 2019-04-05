@@ -13,42 +13,6 @@ namespace LibraryCatalogWebApp {
     public partial class Catalog {
         
         /// <summary>
-        /// searchAuthor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox searchAuthor;
-        
-        /// <summary>
-        /// button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button button1;
-        
-        /// <summary>
-        /// SearchBook control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox SearchBook;
-        
-        /// <summary>
-        /// button2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button button2;
-        
-        /// <summary>
         /// booksGrid control.
         /// </summary>
         /// <remarks>

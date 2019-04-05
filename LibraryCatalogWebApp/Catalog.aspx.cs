@@ -5,43 +5,26 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using LibraryCatalogWebApp.Models;
+using System.Data.Entity;
+using System.Web.ModelBinding;
 
 namespace LibraryCatalogWebApp
 {
     public partial class Catalog : Page
     {
+        CatalogContext db = new CatalogContext();
         protected void Page_Load(object sender, EventArgs e)
         {
+            db.Books.Load();
+            //this.booksGrid.DataSource = db.Books.Local.ToBindingList();
 
         }
         public IQueryable<Book> booksGrid_GetData()
         {
-            CatalogContext db = new CatalogContext();
+            
             var query = db.Books;
             return query;
         }
 
-        protected void getBooksByAuthor(object sender, EventArgs e)
-        {
-           // CatalogContext db = new CatalogContext();
-            //IQueryable<Book> query = db.Books.Include();
-        }
-
-        protected void getBooksByTitle(object sender, EventArgs e)
-        { }
-
-        public IQueryable<Book> _getBooksByAuthor()
-        {
-            CatalogContext db = new CatalogContext();
-            var query = db.Books;
-            return query;
-        }
-
-        public IQueryable<Book> _getBooksByTitle()
-        {
-            CatalogContext db = new CatalogContext();
-            var query = db.Books;
-            return query;
-        }
     }
 }

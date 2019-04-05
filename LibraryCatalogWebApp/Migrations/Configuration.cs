@@ -12,7 +12,7 @@ namespace LibraryCatalogWebApp.Migrations
 
     internal sealed class Configuration : DbMigrationsConfiguration<CatalogContext>
     {
-        private static readonly string jsonfile = "C:\\Users\\jjackson\\source\\repos\\LibraryCatalog\\LibraryCatalogConsole\\json\\books.json";
+        private static readonly string jsonfile = @"C:\Users\jjackson\source\repos\LibraryCatalog\LibraryCatalogConsole\json\books.json";
 
         public Configuration()
         {
